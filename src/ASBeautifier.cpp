@@ -2370,9 +2370,12 @@ void ASBeautifier::parseCurrentLine(const string& line)
 					tabCount += classInitializerTabs;
 			}
 
-			else if (isJavaStyle() && lastLineHeader == &AS_FOR)
+			// else if (isJavaStyle() && lastLineHeader == &AS_FOR)
+      // fixed by erpingwu@gmail.com, 2013-3-15
+      else if ((isCStyle() || isJavaStyle()) && lastLineHeader == &AS_FOR)
 			{
 				// found a java for-each statement
+        // found a c++11 for-each statement
 				// so do nothing special
 			}
 
