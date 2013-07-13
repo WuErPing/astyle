@@ -21,3 +21,9 @@ fixed indent of `for(auto& x : list)` in c++11
        }
  
 ```
+
+<http://astyle.sourceforge.net/notes.html>
+
+`Artistic Style 2.03  (April 2013)`
+
+`Fix C++11 standard for range-based "for" loops (3458402, 3480095)`
